@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Злодеи</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Главные противники</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="heroes.html">Герои</a>
+      <a href="villains.html">Злодеи</a>
+      <a href="history.html">История</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Меню</h2>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="heroes.html">Герои</a></li>
+        <li><a href="villains.html">Злодеи</a></li>
+        <li><a href="history.html">История</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <h2 class="page-title">Злодеи Черепашки-ниндзя</h2>
+      <div class="card-grid">
+        <!-- Карточка Шреддера -->
+        <div class="card" data-id="shredder"
+             data-name="Шреддер"
+             data-description="Главный враг, лидер клана Фут."
+             data-full-description="Шреддер, настоящее имя Ороку Саки, является заклятым врагом Черепашек-ниндзя и Мастера Сплинтера. Он — безжалостный лидер клана Фут, преступной организации, которая сеет хаос в Нью-Йорке. Шреддер обладает невероятными боевыми навыками и использует острые лезвия на своей броне, что делает его крайне опасным противником.">
+          <img src="shredder.jpg" alt="Шреддер">
+          <h4>Шреддер</h4>
+          <p>Главный враг, лидер клана Фут.</p>
+        </div>
+
+        <!-- Карточка Крэнга -->
+        <div class="card" data-id="krang"
+             data-name="Крэнг"
+             data-description="Инопланетный мозг с роботическим телом."
+             data-full-description="Крэнг — инопланетный военачальник из Измерения Икс, представляющий собой мозг без тела. Он обычно управляет гигантским роботическим костюмом. Крэнг объединился со Шреддером, чтобы завоевать Землю и превратить её в свой новый дом. Его планы часто включают использование сложных инопланетных технологий и создание мутантов.">
+          <img src="krang.jpg" alt="Крэнг" onerror="this.src='https://placehold.co/200x200/333/fff?text=Крэнг'">
+          <h4>Крэнг</h4>
+          <p>Инопланетный мозг с роботическим телом.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    &copy; 2025 TMNT Fan Site
+  </footer>
+
+  <!-- Модальное окно для подробной информации -->
+  <div id="infoModal" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+      <p id="modalFullDescription"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

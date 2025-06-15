@@ -1,0 +1,324 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0c0c0c; /* Цвет фона для всех страниц, кроме главной */
+  color: #e0ffe0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Стили для главной страницы (только для body с классом homepage) */
+body.homepage {
+  background-image: url('you.png'); /* Путь к вашему изображению you.png */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+/* Шапка */
+.site-header {
+  background-color: rgba(31, 31, 31, 0.9); /* Сделали полупрозрачным */
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #2ecc71;
+}
+.site-header h1 {
+  color: #2ecc71;
+  margin-bottom: 10px;
+}
+.site-header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.site-header nav a:hover {
+  color: #2ecc71;
+}
+
+/* Контейнер с контентом */
+.container {
+  display: flex;
+  flex: 1;
+  background-color: rgba(16, 16, 16, 0.8); /* Сделали полупрозрачным */
+}
+
+/* Сайдбар */
+.sidebar {
+  width: 260px;
+  background-color: rgba(24, 24, 24, 0.85); /* Сделали полупрозрачным */
+  padding: 20px;
+  border-right: 2px solid #2ecc71;
+}
+.sidebar h2 {
+  color: #2ecc71;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-bottom: 1px solid #2ecc71;
+  padding-bottom: 5px;
+}
+.sidebar ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+.sidebar ul li a {
+  color: #aaffaa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.sidebar ul li a:hover {
+  color: #2ecc71;
+}
+
+/* Основной контент */
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Баннер */
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 400px;
+  filter: brightness(0.7);
+}
+.banner-text {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: white;
+  text-shadow: 0 0 10px #000;
+}
+.banner-text h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.banner-text p {
+  font-size: 18px;
+}
+
+/* Вводный текст */
+.intro {
+  background-color: rgba(26, 26, 26, 0.85); /* Сделали полупрозрачным */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #2ecc71;
+}
+.intro h3 {
+  color: #2ecc71;
+  margin-bottom: 10px;
+}
+.intro p {
+  line-height: 1.6;
+  color: #ddffdd;
+}
+
+/* Подвал */
+.site-footer {
+  background-color: rgba(31, 31, 31, 0.9); /* Сделали полупрозрачным */
+  padding: 15px;
+  text-align: center;
+  border-top: 3px solid #2ecc71;
+  color: #cccccc;
+  margin-top: auto;
+}
+
+.page-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2ecc71;
+  border-bottom: 2px solid #2ecc71;
+  padding-bottom: 10px;
+}
+
+/* Карточки персонажей: heroes.html, villains.html */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: rgba(26, 26, 26, 0.85); /* Сделали полупрозрачным */
+  border: 1px solid #2ecc71;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  color: #e0ffe0;
+  box-shadow: 0 0 8px rgba(0, 255, 120, 0.3);
+  transition: transform 0.3s;
+  cursor: pointer; /* Добавили курсор-указатель для интерактивности */
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.card h4 {
+  margin-bottom: 5px;
+  color: #8f8;
+}
+
+/* Таблица истории: history.html */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.history-table th, .history-table td {
+  border: 1px solid #2ecc71;
+  padding: 12px;
+  text-align: left;
+}
+.history-table th {
+  background-color: #2ecc71;
+  color: #000;
+}
+.history-table tr:nth-child(even) {
+  background-color: rgba(24, 24, 24, 0.8); /* Сделали полупрозрачным */
+}
+
+/* Форма обратной связи: contact.html */
+.contact-form {
+  background-color: rgba(26, 26, 26, 0.85); /* Сделали полупрозрачным */
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px #2ecc71;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #2ecc71;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #2ecc71;
+  margin-bottom: 15px;
+  background-color: #101010;
+  color: #fff;
+}
+.contact-form button {
+  background-color: #2ecc71;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.contact-form button:hover {
+  background-color: #27ae60;
+}
+
+/* Стили для модального окна */
+.modal-overlay {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Поверх всего */
+  z-index: 1000; /* Высокий z-index, чтобы быть над остальным контентом */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Позволяет прокручивать, если контент большой */
+  background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+  justify-content: center; /* Центрирование содержимого по горизонтали */
+  align-items: center; /* Центрирование содержимого по вертикали */
+}
+
+.modal-content {
+  background-color: #1a1a1a;
+  margin: 10% auto; /* Отступы сверху/снизу и авто-центрирование по горизонтали */
+  padding: 30px;
+  border: 2px solid #2ecc71;
+  border-radius: 15px;
+  width: 80%; /* Ширина модального окна */
+  max-width: 700px; /* Максимальная ширина */
+  box-shadow: 0 5px 15px rgba(0, 255, 120, 0.5); /* Зеленая тень */
+  position: relative;
+  animation: fadeIn 0.3s ease-out; /* Анимация появления */
+  max-height: 80vh; /* Максимальная высота, чтобы помещалось на экране */
+  overflow-y: auto; /* Добавляем прокрутку, если контент длинный */
+  color: #e0ffe0;
+}
+
+.modal-content h3 {
+  color: #2ecc71;
+  margin-bottom: 15px;
+  font-size: 28px;
+  border-bottom: 1px solid #2ecc71;
+  padding-bottom: 10px;
+}
+
+.modal-content p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.close-button {
+  color: #aaaaaa;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #2ecc71;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Анимация появления модального окна */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Медиа-запросы для адаптивности модального окна */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    margin: 5% auto;
+    padding: 20px;
+  }
+  .modal-content h3 {
+    font-size: 24px;
+  }
+}

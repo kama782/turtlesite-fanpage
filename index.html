@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Черепашки‑Ниндзя – TurtleSite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="homepage"> <!-- Добавлен класс homepage для применения фонового изображения -->
+  <header class="site-header">
+    <h1>TurtleSite</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="heroes.html">Герои</a>
+      <a href="villains.html">Злодеи</a>
+      <a href="history.html">История</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <section class="featured">
+        <h2>Избранное</h2>
+        <ul>
+          <li><a href="heroes.html">Герои</a></li>
+          <li><a href="villains.html">Злодеи</a></li>
+          <li><a href="history.html">История</a></li>
+        </ul>
+      </section>
+      <section class="news">
+        <h2>Новости</h2>
+        <ul>
+          <li>📣 Новая серия комиксов уже в продаже!</li>
+          <li>🎬 Трейлер фильма “Mutant Mayhem”</li>
+        </ul>
+      </section>
+    </aside>
+
+    <main class="content">
+      <div class="hero-banner">
+        <img src="you.png" alt="Черепашки ниндзя баннер">
+        <div class="banner-text">
+          <h2>Добро пожаловать в мир Черепашек‑Ниндзя</h2>
+          <p>Узнай всё о любимых героях!</p>
+        </div>
+      </div>
+
+      <section class="intro">
+        <h3>Чем полезен этот сайт?</h3>
+        <p>Это фан‑энциклопедия, где ты найдёшь информацию о персонажах, комиксах, мультфильмах, играх и многом другом. Добро пожаловать!</p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    &copy; 2025 TurtleSite – TMNT.
+  </footer>
+
+  <!-- Модальное окно для подробной информации (не используется на этой странице, но для единообразия присутствует) -->
+  <div id="infoModal" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+      <p id="modalFullDescription"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
