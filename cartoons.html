@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мультфильмы</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Мультфильмы Черепашек-ниндзя</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="heroes.html">Герои</a>
+      <a href="villains.html">Злодеи</a>
+      <a href="cartoons.html">Мультфильмы</a> <!-- Новая ссылка -->
+      <a href="history.html">История</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Меню</h2>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="heroes.html">Герои</a></li>
+        <li><a href="villains.html">Злодеи</a></li>
+        <li><a href="cartoons.html">Мультфильмы</a></li> <!-- Новая ссылка в сайдбаре -->
+        <li><a href="history.html">История</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <h2 class="page-title">Анимационные приключения Черепашек-ниндзя</h2>
+
+      <div class="info-block">
+        <h3>Черепашки-ниндзя (1987)</h3>
+        <img src="images/tmnt_1987.jpg" alt="Мультсериал 1987" onerror="this.src='https://placehold.co/400x225/333/fff?text=TMNT 1987'">
+        <p>Оригинальный и самый известный мультсериал, который принес Черепашкам-ниндзя мировую популярность. Известен своим комедийным стилем, запоминающимися персонажами и фразами. Он заложил основу для многих элементов франшизы.</p>
+      </div>
+
+      <div class="info-block">
+        <h3>Черепашки-ниндзя (2003)</h3>
+        <img src="images/tmnt_2003.jpg" alt="Мультсериал 2003" onerror="this.src='https://placehold.co/400x225/333/fff?text=TMNT 2003'">
+        <p>Более мрачная и серьезная адаптация, которая вернулась к истокам комиксов Mirage Studios. Сериал отличается более сложными сюжетными линиями, проработанными характерами и динамичными боевыми сценами.</p>
+      </div>
+
+      <div class="info-block">
+        <h3>Черепашки-ниндзя (2012)</h3>
+        <img src="images/tmnt_2012.jpg" alt="Мультсериал 2012" onerror="this.src='https://placehold.co/400x225/333/fff?text=TMNT 2012'">
+        <p>CGI-анимационный сериал от Nickelodeon, сочетающий комедию, экшен и элементы драмы. Известен своей современной анимацией, новыми интерпретациями персонажей и расширенной мифологией. Включает много юмора и отсылок к поп-культуре.</p>
+      </div>
+
+      <div class="info-block">
+        <h3>Эволюция Черепашек-ниндзя (2018)</h3>
+        <img src="images/tmnt_rise.jpg" alt="Мультсериал 2018" onerror="this.src='https://placehold.co/400x225/333/fff?text=TMNT Rise'">
+        <p>Стиль этого мультсериала сильно отличается от предыдущих версий. Он предлагает более легкий тон, яркую 2D-анимацию и переосмысление способностей Черепашек. Фокус смещен на комедийные ситуации и новые приключения.</p>
+      </div>
+
+      <div class="info-block">
+        <h3>Черепашки-ниндзя: Погром мутантов (2023)</h3>
+        <img src="images/tmnt_mutant_mayhem.jpg" alt="Мультфильм 2023" onerror="this.src='https://placehold.co/400x225/333/fff?text=Mutant Mayhem'">
+        <p>Полнометражный анимационный фильм с уникальным визуальным стилем, напоминающим рисунки подростков. Фильм сосредоточен на попытках Черепашек вписаться в человеческое общество и противостоянии новым угрозам со стороны мутантов.</p>
+      </div>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    &copy; 2025 TMNT Fan Site
+  </footer>
+
+  <!-- Модальное окно для подробной информации (не используется на этой странице, но для единообразия присутствует) -->
+  <div id="infoModal" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+      <p id="modalFullDescription"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
