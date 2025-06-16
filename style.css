@@ -311,6 +311,38 @@ body.homepage {
   to { opacity: 1; transform: scale(1); }
 }
 
+/* Стили для информационных блоков на странице мультфильмов */
+.info-block {
+  background-color: rgba(26, 26, 26, 0.85); /* Полупрозрачный фон */
+  border: 1px solid #2ecc71;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 8px rgba(0, 255, 120, 0.3);
+}
+
+.info-block h3 {
+  color: #2ecc71;
+  margin-bottom: 10px;
+  font-size: 24px;
+  border-bottom: 1px solid #2ecc71;
+  padding-bottom: 5px;
+}
+
+.info-block img {
+  max-width: 100%;
+  height: 225px; /* Установлена фиксированная высота для изображений */
+  object-fit: cover; /* Изображение будет обрезаться, чтобы соответствовать размеру */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: block; /* Убирает лишний пробел под изображением */
+}
+
+.info-block p {
+  line-height: 1.6;
+  color: #ddffdd;
+}
+
 /* Медиа-запросы для адаптивности модального окна */
 @media (max-width: 768px) {
   .modal-content {
